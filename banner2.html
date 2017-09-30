@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Banner</title>
+<style>
+#containerBanners{
+	width: 100%;
+	max-width: 900px;
+	white-space: nowrap;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+#containerBanners .container{
+	transition: transform 1s;
+}
+
+#containerBanners img{
+	width: 100%;
+	display: inline;
+}
+
+
+#bullets{border:1px solid black; height: 3em;}
+
+#bullets ul li{list-style-type: none; border:1px solid gray; width: 1em; height: 1em; border-radius:10px; float: left; margin:0 0 0 1em;}
+
+#bullets ul li.ativa{border: 1px solid red; width: 1em; height: 1em; border-radius:10px; transition: all 1s;}
+
+</style>
+</head>
+
+<body>
+<div id="containerBanners">
+	<div class="container">
+	<img src="banner01.jpg"/><!--
+	--><img src="banner02.jpg"/><!--
+	--><img src="banner03.jpg"/><!--
+	--><img src="banner04.jpg"/>
+	</div>
+</div>
+<div id="bullets"></div>
+<p class="anterior">< Anterior</p>
+<p class="proxima">Proxima ></p>
+
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script src="banner2.js" type="text/javascript"></script>
+</html>
